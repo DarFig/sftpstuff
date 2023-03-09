@@ -1,3 +1,7 @@
+useradd $USER
+
+
+
 sleep 1
 #start services
 service ssh start

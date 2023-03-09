@@ -8,11 +8,13 @@ RUN apt-get update && \
 
 
 
-#     
+# add files    
 ADD run.sh /run.sh
+ADD sshd_config /etc/ssh/sshd_config
 RUN chmod a+x /run.sh
 
-
+# env-var
+ENV USER=""
 
 EXPOSE 22
 
