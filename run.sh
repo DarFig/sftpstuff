@@ -2,7 +2,7 @@
 
 # nuevo usuario
 useradd --password $HASH $USER 
-sed -i 's/gtfaemet/\"$USER\"'/g "/etc/ssh/sshd_config"
+sed -i 's/ELUSER/\"$USER\"'/g "/etc/ssh/sshd_config"
 
 # dejamos al usuario sin home
 usermod -d "" $USER
