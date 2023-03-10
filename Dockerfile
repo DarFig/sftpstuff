@@ -16,7 +16,7 @@ RUN chmod a+x /run.sh
 
 # env-var
 ENV USER=""
-ENV hash=""
+ENV HASH=""
 
 EXPOSE 22
 
