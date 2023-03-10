@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # nuevo usuario
 useradd --password $HASH $USER 
 sed -i 's/ELUSER/$USER'/g "/etc/ssh/sshd_config"
